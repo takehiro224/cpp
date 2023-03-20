@@ -23,7 +23,7 @@ int main() {
     // 身長と体重からBMIを計算する
     bmi = weight / height / height;
 
-    // 標準体重を計算する
+    // 標準体重を計算する(constとdoubleの計算)
     stdWeight = STD_BMI * height * height;
 
     // BMIを画面に表示する
@@ -31,6 +31,14 @@ int main() {
 
     // 標準体重を画面に表示する
     cout << "あなたの標準体重は、" << stdWeight << "Kgです。" << endl;
+
+    // 肥満かどうかを判定した結果を表示する
+    if (bmi >= 25.0) {
+        cout << "肥満" << endl;
+    }
+    else {
+        cout << "肥満ではない" << endl;
+    }
 
     return 0;
 }
