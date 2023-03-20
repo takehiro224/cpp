@@ -1,3 +1,12 @@
+// 健康診断のデータを格納する構造体の定義
+struct HealthCheck {
+    string name;
+    double height;
+    double weight;
+    double bmi;
+};
+
+
 // BMIを求める関数のプロトタイプ宣言
 double getBmi(double height, double weight);
 
