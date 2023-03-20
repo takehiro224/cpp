@@ -23,5 +23,12 @@ int main() {
     // 買い物が終了したことを示す
     cout << "買い物終了" << endl;
 
+    int month;
+
+    for (month = 1; month <= 12; month++) {
+        cout << month << "月\t"
+    }
+    cout << endl;
+
     return 0;
 }
