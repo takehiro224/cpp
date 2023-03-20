@@ -33,11 +33,23 @@ int main() {
     cout << "あなたの標準体重は、" << stdWeight << "Kgです。" << endl;
 
     // 肥満かどうかを判定した結果を表示する
-    if (bmi >= 25.0) {
+    if (bmi >= 18.5) {
         cout << "肥満" << endl;
     }
-    else {
+    else if (bmi < 25.0) {
         cout << "肥満ではない" << endl;
+    }
+    else if (bmi < 30.0) {
+        cout << "肥満度1" << endl;
+    }
+    else if (bmi < 35.0) {
+        cout << "肥満度2" << endl;
+    }
+    else if(bmi < 40.0) {
+        cout << "肥満度3" << endl;
+    }
+    else {
+        cout << "肥満度4" << endl;
     }
 
     return 0;
