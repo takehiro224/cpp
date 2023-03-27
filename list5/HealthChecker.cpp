@@ -22,3 +22,8 @@ HealthChecker::HealthChecker(string name, double height, double weight) {
     this->weight = weight;
     this->bmi = 0;
 }
+
+// 氏名を返すメンバ関数の実装
+string HealthChecker::getName() {
+    return this->name;
+}
